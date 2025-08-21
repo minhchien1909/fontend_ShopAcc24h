@@ -1,0 +1,21 @@
+services:
+  lubumall-next-fe:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: shop-accc
+    ports:
+      - "2055:2055"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=development
+    env_file:
+      - .env
+    volumes:
+      - /app/node_modules
+    networks:
+      - shop-accc
+
+networks:
+  shop-accc:
+    driver: bridge
