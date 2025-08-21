@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     container_name: shop-accc
     ports:
-      - "2055:2055"
+      - "8888:8888"
     restart: unless-stopped
     environment:
       - NODE_ENV=development
