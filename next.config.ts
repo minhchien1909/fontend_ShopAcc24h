@@ -1,7 +1,7 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
   output: 'standalone',
-  transpilePackages: ["react-quill"],
   images: {
     remotePatterns: [
       {
@@ -24,8 +24,13 @@ const nextConfig = {
       {
         hostname: "thegioihaisan.vn",
       },
+      {
+        hostname: "res.cloudinary.com", // Đảm bảo hostname này được thêm vào
+        pathname: "/**", // Thêm pathname để cho phép tất cả các đường dẫn
+      },
     ],
   },
+  /* config options here */
 };
 
-module.exports = nextConfig;
+export default nextConfig;
