@@ -19,3 +19,6 @@ services:
 networks:
   shop-accc:
     driver: bridge
+
+
+# docker build -t shop-acc:latest .
