@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Game Store Minh Thuận",
-  description: "Cửa hàng game Minh Thuận - hàng đầu tại Hà Nội ",
+  title: "Game Store",
+  description: "Cửa hàng game - hàng đầu tại Hà Nội ",
 };
 
 export default function RootLayout({
