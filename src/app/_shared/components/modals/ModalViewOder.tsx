@@ -105,10 +105,7 @@ export default function ModalViewOder({
                   Ghi chú: {data.note || "Không có"}
                 </p>
                 <p className="text-gray-600">
-                  Phương thức:{" "}
-                  {data.payment_method === "cod"
-                    ? "Thanh toán khi nhận hàng"
-                    : "Chuyển khoản"}
+                  Phương thức: Chuyển khoản
                 </p>
                 {data.status === "canceled" && (
                   <p className="text-red-600 mt-2">

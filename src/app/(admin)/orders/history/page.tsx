@@ -252,9 +252,9 @@ console.log("role" , role);
                           Mã: {order.discount_code} (-{order.discount_percent}%)
                         </p>
                       )}
-                      <p className="text-sm text-gray-500">
-                        Ship: {formatCurrency(order.free_of_charge)}
-                      </p>
+                                             <p className="text-sm text-gray-500">
+                         Phí thay thông tin: {formatCurrency(order.free_of_charge)}
+                       </p>
                     </TableCell>
 
                     <TableCell>
@@ -360,7 +360,7 @@ console.log("role" , role);
                   )}
 
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-500">Phí ship:</span>
+                    <span className="text-gray-500">Phí thay thông tin:</span>
                     <span>{formatCurrency(order.free_of_charge)}</span> 
                   </div>
 

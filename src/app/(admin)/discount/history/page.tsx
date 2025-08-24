@@ -139,7 +139,7 @@ export default function DiscountHistoryPage() {
                         {formatCurrency(item.final_total)}
                       </p>
                       <p className="text-sm text-gray-500">
-                        Ship: {formatCurrency(item.free_of_charge)}
+                        Phí thay thông tin: {formatCurrency(item.free_of_charge)}
                       </p>
                     </TableCell>
                     <TableCell>
@@ -207,7 +207,7 @@ export default function DiscountHistoryPage() {
                       {formatCurrency(item.final_total)}
                     </p>
                     <p className="text-sm text-gray-500">
-                      Ship: {formatCurrency(item.free_of_charge)}
+                      Phí thay thông tin: {formatCurrency(item.free_of_charge)}
                     </p>
                   </div>
 

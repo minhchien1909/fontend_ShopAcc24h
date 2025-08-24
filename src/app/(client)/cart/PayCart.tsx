@@ -21,7 +21,7 @@ export default function PayCart({ data, totalPrice }: any) {
     const savedCoupon = sessionStorage.getItem("coupon");
     return savedCoupon || "";
   });
-  const [paymentMethod, setPaymentMethod] = useState("cod");
+  const [paymentMethod, setPaymentMethod] = useState("bank");
   const [loading, setLoading] = useState(false);
   const token = getCookie("token");
   const router = useRouter();
@@ -145,17 +145,12 @@ export default function PayCart({ data, totalPrice }: any) {
   };
 
   const handleCheckout = () => {
-    if (paymentMethod === "cod") {
-      handleCreateOrder();
-    }
-    if (paymentMethod === "bank") {
-      sessionStorage.setItem("setIsOpenModalPayment", "true");
-      setIsOpenModalPayment(true);
-      setDataPayment(finalTotalNumber);
-      sessionStorage.removeItem("paymentDescription");
-      sessionStorage.removeItem("paymentCountdown");
-      sessionStorage.removeItem("paymentTimestamp");
-    }
+    sessionStorage.setItem("setIsOpenModalPayment", "true");
+    setIsOpenModalPayment(true);
+    setDataPayment(finalTotalNumber);
+    sessionStorage.removeItem("paymentDescription");
+    sessionStorage.removeItem("paymentCountdown");
+    sessionStorage.removeItem("paymentTimestamp");
   };
   return (
     <div className="bg-gray-50 rounded-lg shadow p-4">
@@ -262,11 +257,6 @@ export default function PayCart({ data, totalPrice }: any) {
               value={paymentMethod}
               onValueChange={handlePaymentChange}
             >
-              <Radio value="cod" className="flex items-center gap-2">
-                <div className="flex items-center gap-2">
-                  Thanh toán khi nhận hàng
-                </div>
-              </Radio>
               <Radio value="bank" className="flex items-center gap-2">
                 <div className="flex items-center gap-2">
                   Thanh toán chuyển khoản
