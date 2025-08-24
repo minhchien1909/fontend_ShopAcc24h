@@ -264,7 +264,6 @@ export const cancelOrder = async (
       }),
     });
     const _data = await response.json();
-    console.log(_data, "thuan");
     return _data;
   } catch (error) {
     console.error(error);

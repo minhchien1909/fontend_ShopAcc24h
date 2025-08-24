@@ -22,7 +22,6 @@ export default function ModalViewOder({
   const formatCurrency = (value: string) => {
     return parseInt(value).toLocaleString("vi-VN") + "đ";
   };
-  console.log(data, "thuan");
 
   const statusColorMap: {
     [key: string]: {

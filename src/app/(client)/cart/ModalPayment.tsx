@@ -17,8 +17,8 @@ export default function ModalPayment({
   PaymentSuccess,
 }: ModalPaymentProps) {
   const router = useRouter();
-  const [bank, setBank] = useState("9018092003");
-  const [bankName, setBankName] = useState("MBBANK");
+  const [bank, setBank] = useState("4330933341");
+  const [bankName, setBankName] = useState("BIDV");
   const [content, setContent] = useState<any>(() => {
     const savedDescription = sessionStorage.getItem("paymentDescription");
     if (savedDescription) {
@@ -217,7 +217,7 @@ export default function ModalPayment({
                             <div className="flex justify-between items-center">
                               <span className="text-gray-600">Người nhận:</span>
                               <span className="font-medium">
-                                Nguyễn Minh Thuận
+                              HOANG MINH CHIEN
                               </span>
                             </div>
 

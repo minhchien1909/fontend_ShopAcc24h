@@ -52,6 +52,7 @@ export default function OrderHistoryPage() {
         searchTerm
       );
 
+
       if (res.ok) {
         setRole(false);
         setFilteredOrders(res.data);
@@ -99,10 +100,12 @@ export default function OrderHistoryPage() {
   if (isLoading) {
     return <Loading />;
   }
+console.log("role" , role);
 
-  if (role) {
-    return <No_found />;
-  }
+  // if (role) {
+  //   return <No_found />;
+  // }
+
 
   return (
     <div className="p-6">
@@ -180,7 +183,7 @@ export default function OrderHistoryPage() {
                 <TableColumn align="center">Trạng thái</TableColumn>
               </TableHeader>
               <TableBody emptyContent={"Không tìm thấy đơn hàng nào"}>
-                {dataOder.map((order) => (
+                {dataOder?.map((order) => (
                   <TableRow
                     key={order.id}
                     className="hover:bg-gray-50 cursor-pointer"
@@ -218,21 +221,21 @@ export default function OrderHistoryPage() {
                       <div className="max-h-32 overflow-auto">
                         <div className="flex items-center gap-3 mb-2">
                           <img
-                            src={order.products[0].img}
-                            alt={order.products[0].name}
+                            src={order.products[0]?.img}
+                            alt={order.products[0]?.name}
                             className="w-12 h-12 object-cover rounded-lg border border-gray-200"
                           />
                           <div>
                             <p className="font-medium text-gray-800 line-clamp-1">
-                              {order.products[0].name}
+                              {order.products[0]?.name}
                             </p>
                             <p className="text-sm text-gray-500">
-                              {order.products[0].price.toLocaleString("vi-VN")}đ
-                              x {order.products[0].quantity}
+                              {order.products[0]?.price.toLocaleString("vi-VN")}đ
+                              x {order.products[0]?.quantity}
                             </p>
                             {order.products.length > 1 && (
                               <span className="text-sm text-amber-600 font-medium">
-                                +{order.products.length - 1} sản phẩm khác
+                                +{order?.products.length - 1} sản phẩm khác
                               </span>
                             )}
                           </div>
@@ -319,21 +322,21 @@ export default function OrderHistoryPage() {
 
                 <div className="flex items-center gap-3 mb-4 bg-gray-50 p-3 rounded-lg">
                   <img
-                    src={order.products[0].img}
-                    alt={order.products[0].name}
+                    src={order.products[0]?.img}
+                    alt={order.products[0]?.name}
                     className="w-16 h-16 object-cover rounded-lg border border-gray-200"
                   />
                   <div>
                     <p className="font-medium text-gray-800 line-clamp-1">
-                      {order.products[0].name}
+                          {order.products[0]?.name}
                     </p>
                     <p className="text-sm text-gray-500">
-                      {order.products[0].price.toLocaleString("vi-VN")}đ x{" "}
-                      {order.products[0].quantity}
+                      {order.products[0]?.price.toLocaleString("vi-VN")}đ x{" "}
+                      {order.products[0]?.quantity}
                     </p>
                     {order.products.length > 1 && (
                       <span className="text-sm text-amber-600 font-medium">
-                        +{order.products.length - 1} sản phẩm khác
+                        +{order?.products.length - 1} sản phẩm khác
                       </span>
                     )}
                   </div>
@@ -358,7 +361,7 @@ export default function OrderHistoryPage() {
 
                   <div className="flex justify-between items-center">
                     <span className="text-gray-500">Phí ship:</span>
-                    <span>{formatCurrency(order.free_of_charge)}</span>
+                    <span>{formatCurrency(order.free_of_charge)}</span> 
                   </div>
 
                   <div className="flex justify-between items-center">
