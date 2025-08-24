@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "Game Store",
   description: "Cửa hàng game - hàng đầu tại Hà Nội ",
 };
-
+// test 
 export default function RootLayout({
   children,
 }: Readonly<{
