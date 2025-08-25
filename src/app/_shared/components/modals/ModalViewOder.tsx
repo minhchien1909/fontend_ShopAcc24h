@@ -163,7 +163,7 @@ export default function ModalViewOder({
                 </div>
               )}
               <div className="flex justify-between mb-2 border-t pt-2">
-                <span className="text-gray-600">Phí bảo hàng:</span>
+                <span className="text-gray-600">Phí bảo hành:</span>
                 <span>+{formatCurrency(data.free_of_charge)}</span>
               </div>
               <div className="flex justify-between font-medium text-lg mt-2 pt-2 border-t">

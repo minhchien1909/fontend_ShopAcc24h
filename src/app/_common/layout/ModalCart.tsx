@@ -271,7 +271,7 @@ export default function ModalCart() {
                       </span>
                     </div>
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-gray-600">Phí bảo hàng:</span>
+                      <span className="text-gray-600">Phí bảo hành:</span>
                       <span className="font-semibold">Miễn phí</span>
                     </div>
                     <div className="flex justify-between items-center text-lg">

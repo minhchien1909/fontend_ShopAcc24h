@@ -231,7 +231,7 @@ export default function PayCart({ data, totalPrice }: any) {
             </div>
 
             <div className="flex justify-between items-center">
-              <span>Phí bảo hàng</span>
+              <span>Phí bảo hành</span>
               <span className="text-green-600">{formattedShipping}</span>
             </div>
             {discount > 0 && (
