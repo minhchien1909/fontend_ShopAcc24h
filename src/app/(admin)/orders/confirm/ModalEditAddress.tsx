@@ -24,7 +24,7 @@ export default function ModalEditAddress({
     <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
       <ModalContent>
         <ModalHeader>
-          <h2 className="text-2xl font-bold">Chỉnh sửa địa chỉ</h2>
+          <h2 className="text-2xl font-bold">Chỉnh sửa Thông tin</h2>
         </ModalHeader>
         <ModalBody>
           <Input
@@ -36,8 +36,8 @@ export default function ModalEditAddress({
             onChange={(e) => setPhone(e.target.value)}
           />
           <Textarea
-            label="Địa chỉ"
-            placeholder="Nhập địa chỉ"
+            label="Thông tin"
+            placeholder="Nhập Thông tin"
             className="mt-4"
             value={address}
             onChange={(e) => setAddress(e.target.value)}

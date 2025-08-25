@@ -37,7 +37,7 @@ export default function page() {
   }, [reload]);
 
   const handleDelete = (id: string) => {
-    if (!confirm("Bạn có chắc chắn  muốn xóa địa chỉ này không?")) return;
+    if (!confirm("Bạn có chắc chắn  muốn xóa Thông tin này không?")) return;
     deleteAddress(id, token).then((res) => {
       if (res.ok) {
         enqueueSnackbar(res.message, {
@@ -55,28 +55,28 @@ export default function page() {
   return (
     <div className="container mx-auto">
       <div className="flex justify-between items-center mb-4">
-        <h1 className="text-2xl font-bold">Danh sách địa chỉ</h1>
+        <h1 className="text-2xl font-bold">Danh sách Thông tin</h1>
         {addresses.length < 5 && (
           <Button color="warning" onPress={() => setOpen(true)}>
-            Thêm địa chỉ
+            Thêm Thông tin
           </Button>
         )}
       </div>
 
       {/* Bảng cho màn hình lớn */}
       <div className="hidden md:block">
-        <Table aria-label="Danh sách địa chỉ">
+        <Table aria-label="Danh sách Thông tin">
           <TableHeader>
             <TableColumn>Tên gợi nhớ</TableColumn>
             <TableColumn>Số điện thoại</TableColumn>
-            <TableColumn>Địa chỉ</TableColumn>
+            <TableColumn>Thông tin</TableColumn>
             <TableColumn>Hành động</TableColumn>
           </TableHeader>
           <TableBody>
             {addresses.length === 0 ? (
               <TableRow>
                 <TableCell className="text-center">-</TableCell>
-                <TableCell className="text-center">Không có địa chỉ</TableCell>
+                <TableCell className="text-center">Không có Thông tin</TableCell>
                 <TableCell className="text-center">-</TableCell>
                 <TableCell className="text-center">-</TableCell>
               </TableRow>
@@ -115,7 +115,7 @@ export default function page() {
       {/* Giao diện cho mobile */}
       <div className="md:hidden">
         {addresses.length === 0 ? (
-          <div className="text-center py-4">Không có địa chỉ</div>
+          <div className="text-center py-4">Không có Thông tin</div>
         ) : (
           <div className="grid gap-4">
             {addresses.map((item: any) => (
@@ -146,7 +146,7 @@ export default function page() {
                     {item.phone}
                   </div>
                   <div>
-                    <span className="text-gray-500">Địa chỉ: </span>
+                    <span className="text-gray-500">Thông tin: </span>
                     {item.address}
                   </div>
                 </div>

@@ -155,10 +155,10 @@ export default function PayCart({ data, totalPrice }: any) {
   return (
     <div className="bg-gray-50 rounded-lg shadow p-4">
       <div className="space-y-6">
-        {/* Phần địa chỉ giao hàng */}
+        {/* Phần Thông tin giao hàng */}
         <div className="bg-white rounded-lg shadow p-4">
           <div className="flex justify-between items-center mb-4">
-            <span className="font-semibold">Địa chỉ giao hàng</span>
+            <span className="font-semibold">Thông tin giao hàng</span>
             <span
               className="text-amber-500 cursor-pointer hover:underline"
               onClick={() => setIsOpen(!isOpen)}
@@ -173,7 +173,7 @@ export default function PayCart({ data, totalPrice }: any) {
                   <span className="font-medium">
                     Tên gợi nhớ: {dataUsers?.addresses[address]?.name}
                   </span>
-                  <span>Địa chỉ: {dataUsers?.addresses[address]?.address}</span>
+                  <span>Thông tin: {dataUsers?.addresses[address]?.address}</span>
                   <span>
                     Số điện thoại: {dataUsers?.addresses[address]?.phone}
                   </span>
@@ -182,12 +182,12 @@ export default function PayCart({ data, totalPrice }: any) {
             </div>
           ) : (
             <div className="text-center text-gray-500 flex justify-center items-center gap-2">
-              <span>Bạn chưa thêm địa chỉ.</span>
+              <span>Bạn chưa thêm Thông tin.</span>
               <Link
                 href="/account/address"
                 className="text-amber-500 hover:underline"
               >
-                Thêm địa chỉ mới
+                Thêm Thông tin mới
               </Link>
             </div>
           )}
@@ -231,7 +231,7 @@ export default function PayCart({ data, totalPrice }: any) {
             </div>
 
             <div className="flex justify-between items-center">
-              <span>Phí vận chuyển</span>
+              <span>Phí bảo hàng</span>
               <span className="text-green-600">{formattedShipping}</span>
             </div>
             {discount > 0 && (
@@ -288,7 +288,7 @@ export default function PayCart({ data, totalPrice }: any) {
         </div>
       </div>
 
-      {/* Modal địa chỉ */}
+      {/* Modal Thông tin */}
       {isOpen && (
         <ModalViewAddress
           isOpen={isOpen}

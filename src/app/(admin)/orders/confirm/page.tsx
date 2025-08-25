@@ -160,8 +160,8 @@ export default function OrderPage() {
         enqueueSnackbar(res.message, { variant: "error" });
       }
     } catch (error) {
-      console.error("Lỗi khi cập nhật địa chỉ:", error);
-      enqueueSnackbar("Có lỗi xảy ra khi cập nhật địa chỉ", {
+      console.error("Lỗi khi cập nhật Thông tin:", error);
+      enqueueSnackbar("Có lỗi xảy ra khi cập nhật Thông tin", {
         variant: "error",
       });
     }

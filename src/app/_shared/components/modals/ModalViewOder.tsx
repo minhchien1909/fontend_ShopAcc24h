@@ -100,7 +100,7 @@ export default function ModalViewOder({
                 )}
               </div>
               <div>
-                <p className="text-gray-600">Địa chỉ: {data.address}</p>
+                <p className="text-gray-600">Thông tin: {data.address}</p>
                 <p className="text-gray-600">
                   Ghi chú: {data.note || "Không có"}
                 </p>
@@ -163,7 +163,7 @@ export default function ModalViewOder({
                 </div>
               )}
               <div className="flex justify-between mb-2 border-t pt-2">
-                <span className="text-gray-600">Phí vận chuyển:</span>
+                <span className="text-gray-600">Phí bảo hàng:</span>
                 <span>+{formatCurrency(data.free_of_charge)}</span>
               </div>
               <div className="flex justify-between font-medium text-lg mt-2 pt-2 border-t">

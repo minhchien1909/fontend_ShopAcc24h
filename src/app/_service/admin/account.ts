@@ -13,7 +13,7 @@ export const getAddresses = async (token: any) => {
   } catch (error) {
     return {
       ok: false,
-      message: "Đã xảy ra lỗi khi lấy danh sách địa chỉ",
+      message: "Đã xảy ra lỗi khi lấy danh sách Thông tin",
     };
   }
 };
@@ -33,7 +33,7 @@ export const addAddress = async (address: any, token: any) => {
   } catch (error) {
     return {
       ok: false,
-      message: "Đã xảy ra lỗi khi thêm địa chỉ",
+      message: "Đã xảy ra lỗi khi thêm Thông tin",
     };
   }
 };
@@ -53,7 +53,7 @@ export const deleteAddress = async (id: string, token: any) => {
   } catch (error) {
     return {
       ok: false,
-      message: "Đã xảy ra lỗi khi xóa địa chỉ",
+      message: "Đã xảy ra lỗi khi xóa Thông tin",
     };
   }
 };
@@ -73,7 +73,7 @@ export const updateAddress = async (id: string, address: any, token: any) => {
   } catch (error) {
     return {
       ok: false,
-      message: "Đã xảy ra lỗi khi cập nhật địa chỉ",
+      message: "Đã xảy ra lỗi khi cập nhật Thông tin",
     };
   }
 };

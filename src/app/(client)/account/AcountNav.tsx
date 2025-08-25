@@ -17,7 +17,7 @@ const accountMenu = [
   },
   {
     icon: "MapPin",
-    name: "Địa chỉ",
+    name: "Thông tin",
     url: "/account/address",
   },
 ];

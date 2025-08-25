@@ -24,7 +24,7 @@ export const getAllOrder = async (
   }
 };
 
-// confirm order && sửa địa chỉ
+// confirm order && sửa Thông tin
 export const confirmOrder = async (token: string, id: string, data: any) => {
   try {
     const res = await fetch(`${API}/orders/${id}`, {

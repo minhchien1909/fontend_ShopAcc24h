@@ -27,7 +27,7 @@ export default function ContactPage() {
   const getTitleFromIcon = (icon: string) => {
     switch (icon.toLowerCase()) {
       case "map":
-        return "Địa chỉ";
+        return "Thông tin";
       case "phone":
         return "Điện thoại";
       case "mail":

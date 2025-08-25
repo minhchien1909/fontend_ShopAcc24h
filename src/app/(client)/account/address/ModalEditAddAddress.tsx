@@ -87,7 +87,7 @@ export default function ModalEditAddAddress({
     });
   };
 
-  // thêm địa chỉ
+  // thêm Thông tin
   const handleAddAddress = async () => {
     if (!validate()) return;
 
@@ -114,7 +114,7 @@ export default function ModalEditAddAddress({
     }
   };
 
-  // cập nhật địa chỉ
+  // cập nhật Thông tin
   const handleUpdateAddress = async () => {
     if (!validate()) return;
 
@@ -146,7 +146,7 @@ export default function ModalEditAddAddress({
       <ModalContent>
         <ModalHeader>
           <h1 className="text-2xl font-bold">
-            {data.id ? "Cập nhật địa chỉ" : "Thêm địa chỉ"}
+            {data.id ? "Cập nhật Thông tin" : "Thêm Thông tin"}
           </h1>
         </ModalHeader>
         <ModalBody className="flex flex-col gap-4">
@@ -179,7 +179,7 @@ export default function ModalEditAddAddress({
           />
           <Input
             type="text"
-            label="Địa chỉ"
+            label="Thông tin"
             value={data.address}
             onChange={(e) => {
               setData({ ...data, address: e.target.value });
@@ -187,7 +187,7 @@ export default function ModalEditAddAddress({
             }}
             isRequired
             isInvalid={errors.address}
-            errorMessage={errors.address && "Vui lòng nhập địa chỉ"}
+            errorMessage={errors.address && "Vui lòng nhập Thông tin"}
           />
         </ModalBody>
         <ModalFooter>

@@ -72,11 +72,11 @@ export default function ModalDetailAcc({
             </div>
           </div>
 
-          <Table className="mt-4" aria-label="Danh sách địa chỉ">
+          <Table className="mt-4" aria-label="Danh sách Thông tin">
             <TableHeader>
               <TableColumn>STT</TableColumn>
               <TableColumn>SDT</TableColumn>
-              <TableColumn>Địa chỉ</TableColumn>
+              <TableColumn>Thông tin</TableColumn>
             </TableHeader>
             <TableBody>
               {data?.addresses && data?.addresses.length > 0 ? (
