@@ -45,7 +45,7 @@ export default function GeneralIntroduction() {
 
         <div className="mt-12 flex justify-center">
           <button className="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-10 rounded-lg transition duration-300 transform hover:scale-105 shadow-lg flex items-center space-x-2">
-            <span>Đặt bàn ngay</span>
+            <span>Nhanh Tay nào</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"

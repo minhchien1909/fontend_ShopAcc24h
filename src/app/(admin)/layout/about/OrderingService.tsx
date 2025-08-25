@@ -30,7 +30,7 @@ export default function Space({ data, setRefetch }: any) {
   return (
     <div className="mb-16 bg-white p-4 rounded-lg shadow-lg">
       <h2 className="text-2xl font-bold  mb-6 ">
-        Chỉnh sửa Dịch Vụ Đặt Hàng Online
+        Chỉnh sửa Dịch Vụ
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
         {data.map((space: any) => (
