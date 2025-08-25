@@ -178,8 +178,8 @@ export default function ModalEditAddAddress({
             }
           />
           <Input
-            type="text"
-            label="Thông tin"
+            type="Gmail"
+            label="Nhập gmail"
             value={data.address}
             onChange={(e) => {
               setData({ ...data, address: e.target.value });
@@ -187,7 +187,7 @@ export default function ModalEditAddAddress({
             }}
             isRequired
             isInvalid={errors.address}
-            errorMessage={errors.address && "Vui lòng nhập Thông tin"}
+            errorMessage={errors.address && "Vui lòng nhập gmail"}
           />
         </ModalBody>
         <ModalFooter>
