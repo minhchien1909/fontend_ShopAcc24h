@@ -17,8 +17,8 @@ export default function ModalPayment({
   PaymentSuccess,
 }: ModalPaymentProps) {
   const router = useRouter();
-  const [bank, setBank] = useState("4330933341");
-  const [bankName, setBankName] = useState("BIDV");
+  const [bank, setBank] = useState("19092003979");
+  const [bankName, setBankName] = useState("MBBank");
   const [content, setContent] = useState<any>(() => {
     const savedDescription = sessionStorage.getItem("paymentDescription");
     if (savedDescription) {
