@@ -118,7 +118,7 @@ const MenuPageContent = () => {
               <div className="w-full md:w-96">
                 <Input
                   type="text"
-                  placeholder="Tìm kiếm món ăn..."
+                  placeholder="Tìm kiếm tài khoản game..."
                   value={searchTerm}
                   onChange={(e) => {
                     setSearchTerm(e.target.value);
@@ -176,7 +176,7 @@ const MenuPageContent = () => {
 
             {/* Hiển thị kết quả */}
             <div className="text-sm text-default-500 flex items-center gap-2">
-              Hiển thị {filteredItems.length} món ăn
+              Hiển thị {filteredItems.length} tài khoản game
               {categoryFilter && (
                 <>
                   trong danh mục

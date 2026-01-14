@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import CartProduct from "@/app/_shared/components/ui/Cart";
 import Icon from "@/app/_shared/utils/Icon";
-import { getFoodSale } from "@/app/_service/client/layout";
+import { getGameSale } from "@/app/_service/client/layout";
 
 const PopularGameSection = () => {
   const [gameItems, setGameItems] = useState([]);
@@ -17,7 +17,7 @@ const PopularGameSection = () => {
       : gameItems.filter((item: any) => item.category === activeFilter);
 
   useEffect(() => {
-    getFoodSale(activeFilter).then((res) => {
+    getGameSale(activeFilter).then((res) => {
       if (res.ok && res.data) {
         const formattedData = res.data.map((item: any) => ({
           id: item.id,

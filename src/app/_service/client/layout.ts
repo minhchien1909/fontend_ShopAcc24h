@@ -210,7 +210,7 @@ export const getProductsDetail = async (id: any) => {
 };
 
 // get game sale
-export const getFoodSale = async (filter: string) => {
+export const getGameSale = async (filter: string) => {
   try {
     const response = await fetch(`${API}/products/section?filter=${filter}`);
     const data = await response.json();
