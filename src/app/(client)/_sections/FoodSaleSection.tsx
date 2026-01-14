@@ -38,7 +38,7 @@ const PopularGameSection = () => {
   }, [activeFilter]);
 
   return (
-        <div id="game-sale" className="w-full bg-gray-50 py-8 sm:py-12 md:py-16">
+    <div id="game-sale" className="w-full bg-gray-50 py-8 sm:py-12 md:py-16">
       <div className="w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%] xl:w-[70%] mx-auto px-2 sm:px-4">
         {/* Header with decorative elements */}
         <div className="text-center mb-8 sm:mb-12 relative">
@@ -49,7 +49,7 @@ const PopularGameSection = () => {
             Bộ Sưu Tập Game Hot
           </h2>
           <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto px-4">
-            Khám phá những tựa game hấp dẫn nhất với đồ họa đỉnh cao và gameplay 
+            Khám phá những tựa game hấp dẫn nhất với đồ họa đỉnh cao và gameplay
             được phát triển bởi những studio game hàng đầu thế giới
           </p>
           <div className="h-1 w-16 sm:w-20 bg-[#d97706] mx-auto mt-4 sm:mt-6"></div>
