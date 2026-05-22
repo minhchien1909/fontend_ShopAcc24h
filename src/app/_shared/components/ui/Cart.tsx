@@ -77,7 +77,7 @@ export default function CartProduct({
                   )}
                 </div>
 
-                {/* Nhãn món hot */}
+                {/* Nhãn acc hot */}
                 {item?.hot && (
                   <div className="absolute top-3 left-3">
                     <span className="bg-gradient-to-r from-red-500 to-red-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md flex items-center gap-1">

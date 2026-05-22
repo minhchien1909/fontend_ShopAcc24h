@@ -83,7 +83,7 @@ export default function OrderProcessMobile({ data, setRefetch }: any) {
   return (
     <div className="p-4 bg-white shadow-md rounded-lg">
       <div className="space-y-6">
-        <h1 className="text-2xl font-bold mb-4">Chỉnh sửa Quy trình đặt món</h1>
+        <h1 className="text-2xl font-bold mb-4">Chỉnh sửa quy trình mua acc</h1>
 
         {/* Mobile-Friendly Input Section */}
         <div className="space-y-4">

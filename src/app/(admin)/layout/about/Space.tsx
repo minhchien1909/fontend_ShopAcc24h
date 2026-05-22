@@ -94,9 +94,9 @@ export default function SpaceMobile({ data, setRefetch }: any) {
 
   return (
     <div className="mb-16 bg-white p-4 rounded-lg shadow-lg">
-      <h2 className="text-2xl font-bold mb-6">Chỉnh sửa không gian bếp</h2>
+      <h2 className="text-2xl font-bold mb-6">Chỉnh sửa không gian shop acc</h2>
 
-      {/* Kitchen Space Sections - Mobile Grid */}
+      {/* Không gian shop acc - Mobile Grid */}
       <div className="grid grid-cols-1 gap-4">
         {data?.layout_space?.length === 0 ||
         data?.layout_space === undefined ? (

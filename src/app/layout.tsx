@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Game Store",
-  description: "Cửa hàng game - hàng đầu tại Hà Nội ",
+  title: "Shop Acc24h",
+  description: "Shop bán acc game uy tín - giao nhanh, bảo hành, giá tốt",
 };
 // test 
 export default function RootLayout({

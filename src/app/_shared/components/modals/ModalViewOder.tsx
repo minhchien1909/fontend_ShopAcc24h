@@ -89,7 +89,7 @@ export default function ModalViewOder({
 
             <div className="border rounded-lg p-4">
               <div className="flex justify-between items-center">
-                <h4 className="font-medium mb-3">Thông tin giao hàng</h4>
+                <h4 className="font-medium mb-3">Thông tin nhận acc</h4>
                 {_status && (
                   <span
                     className="text-amber-600 font-medium cursor-pointer hover:text-amber-500 transition-colors hover:underline"

@@ -30,7 +30,7 @@ function ViewContactModal({
             </p>
             <span className="flex items-center gap-2 text-sm text-gray-500 font-extralight border w-fit px-2 py-1 rounded-md ">
               <Icon icon="ChevronDown" />
-              Gửi Đến Nhà Hàng
+              Gửi đến Shop Acc
             </span>
           </div>
         </ModalHeader>

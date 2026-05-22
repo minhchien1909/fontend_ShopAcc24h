@@ -10,10 +10,10 @@ import Loading from "@/app/_shared/components/Loading";
 import { dataFilter } from "@/app/_shared/utils/dataFilter";
 import { Input, Select, SelectItem, Chip, Spinner } from "@nextui-org/react";
 
-const MenuPageContent = () => {
+const AccListPageContent = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const [menuItems, setMenuItems] = useState<any[]>([]);
+  const [accItems, setAccItems] = useState<any[]>([]);
   const [totalPage, setTotalPage] = useState(0);
   const [searchTerm, setSearchTerm] = useState("");
   const page = parseInt(searchParams.get("page") || "1");
@@ -24,7 +24,7 @@ const MenuPageContent = () => {
     searchParams.get("category") || ""
   );
 
-  const [filteredItems, setFilteredItems] = useState(menuItems);
+  const [filteredItems, setFilteredItems] = useState(accItems);
 
   const updateURL = (params: {
     search?: string;
@@ -44,7 +44,7 @@ const MenuPageContent = () => {
   };
 
   useEffect(() => {
-    let result = [...menuItems];
+    let result = [...accItems];
 
     // Lọc theo danh mục
     if (categoryFilter) {
@@ -77,7 +77,7 @@ const MenuPageContent = () => {
     result = result.filter((item) => !item.status);
 
     setFilteredItems(result);
-  }, [searchTerm, sortBy, categoryFilter, menuItems]);
+  }, [searchTerm, sortBy, categoryFilter, accItems]);
 
   const sortOptions = [
     { value: "", label: "Sắp xếp theo" },
@@ -90,7 +90,7 @@ const MenuPageContent = () => {
     setIsLoading(true);
     try {
       const response = await getProducts(page, searchTerm);
-      setMenuItems(response.data);
+      setAccItems(response.data);
       setTotalPage(response.total_pages);
     } catch (error) {
       console.error("Lỗi khi tải dữ liệu:", error);
@@ -118,7 +118,7 @@ const MenuPageContent = () => {
               <div className="w-full md:w-96">
                 <Input
                   type="text"
-                  placeholder="Tìm kiếm món ăn..."
+                  placeholder="Tìm kiếm acc..."
                   value={searchTerm}
                   onChange={(e) => {
                     setSearchTerm(e.target.value);
@@ -176,7 +176,7 @@ const MenuPageContent = () => {
 
             {/* Hiển thị kết quả */}
             <div className="text-sm text-default-500 flex items-center gap-2">
-              Hiển thị {filteredItems.length} món ăn
+              Hiển thị {filteredItems.length} acc
               {categoryFilter && (
                 <>
                   trong danh mục
@@ -212,12 +212,12 @@ const MenuPageContent = () => {
   );
 };
 
-const MenuPage = () => {
+const AccListPage = () => {
   return (
     <Suspense fallback={<Loading />}>
-      <MenuPageContent />
+      <AccListPageContent />
     </Suspense>
   );
 };
 
-export default MenuPage;
+export default AccListPage;

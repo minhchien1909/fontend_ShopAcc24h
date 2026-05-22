@@ -79,7 +79,7 @@ export default function PayCart({ data, totalPrice }: any) {
 
   // Định dạng số tiền theo tiền Việt Nam
   const formattedTotalPrice = totalPrice?.toLocaleString("vi-VN") || "0";
-  const formattedShipping =
+  const formattedServiceFee =
     freeOfCharge === 0
       ? "Miễn phí"
       : `${freeOfCharge?.toLocaleString("vi-VN")} đ`;
@@ -155,10 +155,10 @@ export default function PayCart({ data, totalPrice }: any) {
   return (
     <div className="bg-gray-50 rounded-lg shadow p-4">
       <div className="space-y-6">
-        {/* Phần Thông tin giao hàng */}
+        {/* Phần thông tin nhận acc */}
         <div className="bg-white rounded-lg shadow p-4">
           <div className="flex justify-between items-center mb-4">
-            <span className="font-semibold">Thông tin giao hàng</span>
+            <span className="font-semibold">Thông tin nhận acc</span>
             <span
               className="text-amber-500 cursor-pointer hover:underline"
               onClick={() => setIsOpen(!isOpen)}
@@ -232,7 +232,7 @@ export default function PayCart({ data, totalPrice }: any) {
 
             <div className="flex justify-between items-center">
               <span>Phí bảo hành</span>
-              <span className="text-green-600">{formattedShipping}</span>
+              <span className="text-green-600">{formattedServiceFee}</span>
             </div>
             {discount > 0 && (
               <div className="flex justify-between items-center">

@@ -26,7 +26,7 @@ export default function ModalViewAddress({
         <ModalHeader className="flex flex-col gap-1">
           <h2 className="text-xl font-bold text-gray-800">Danh sách Thông tin</h2>
           <p className="text-sm text-gray-500">
-            Vui lòng chọn Thông tin giao hàng
+            Vui lòng chọn thông tin nhận acc
           </p>
         </ModalHeader>
         <ModalBody>

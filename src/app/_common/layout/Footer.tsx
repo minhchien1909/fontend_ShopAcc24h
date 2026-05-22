@@ -93,12 +93,12 @@ export default function Footer() {
             {/* Đăng ký nhận ưu đãi */}
             <div>
               <h3 className="text-2xl font-serif font-bold mb-6 text-amber-300">
-                Tải Game & Ưu đãi
+                Mua Acc & Ưu đãi
               </h3>
               <div className="bg-gradient-to-b from-amber-950/40 to-gray-900 p-6 rounded-lg border border-amber-800/30 shadow-lg">
                 <p className="text-gray-300 mb-4 leading-relaxed">
-                  Tải game ngay hôm nay hoặc đăng ký nhận thông tin về các khuyến
-                  mãi đặc biệt và game mới!
+                  Mua acc ngay hôm nay hoặc đăng ký nhận thông tin về các khuyến
+                  mãi đặc biệt và acc mới!
                 </p>
                 <form onSubmit={handleSubmit}>
                   <Input

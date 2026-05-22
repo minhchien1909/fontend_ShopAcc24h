@@ -78,7 +78,7 @@ export default function SectionHearderHomepage() {
                 Liên hệ ngay
               </Link>
               <Link
-                href="#game-sale"
+                href="#acc-sale"
                 className="px-6 py-3 border border-white text-white rounded-lg font-medium hover:bg-white/10 transition-colors"
               >
                 Xem thêm

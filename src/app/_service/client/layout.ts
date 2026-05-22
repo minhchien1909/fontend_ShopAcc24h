@@ -209,17 +209,17 @@ export const getProductsDetail = async (id: any) => {
   }
 };
 
-// get game sale
-export const getFoodSale = async (filter: string) => {
+// get acc sale section
+export const getAccSale = async (filter: string) => {
   try {
     const response = await fetch(`${API}/products/section?filter=${filter}`);
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error("error game sale", error);
+    console.error("error acc sale", error);
     return {
       ok: false,
-      message: "Đã xảy ra lỗi khi lấy dữ liệu game sale",
+      message: "Đã xảy ra lỗi khi lấy dữ liệu acc sale",
     };
   }
 };

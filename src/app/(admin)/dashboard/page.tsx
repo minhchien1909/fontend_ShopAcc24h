@@ -103,7 +103,7 @@ export default function DashboardPage() {
 
   const orderStatusData = [
     { name: "Đang xử lý", value: dashboardData.order_status.pending },
-    { name: "Đang giao", value: dashboardData.order_status.processing },
+    { name: "Đang xử lý", value: dashboardData.order_status.processing },
     { name: "Hoàn thành", value: dashboardData.order_status.completed },
     { name: "Đã hủy", value: dashboardData.order_status.canceled },
   ];

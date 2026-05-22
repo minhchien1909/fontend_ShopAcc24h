@@ -45,7 +45,7 @@ const AboutDetail = () => {
           </div>
         </div>
 
-        {/* Kitchen Workspace Section */}
+        {/* Không gian shop acc */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-amber-600 mb-6 text-center">
             Không Gian
@@ -90,7 +90,7 @@ const AboutDetail = () => {
         {/* Online Service Section */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-amber-600 mb-6 text-center">
-            Dịch Vụ Đặt Hàng Online
+            Dịch Vụ Mua Acc Online
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {onlineService.map((service: any) => (
@@ -118,7 +118,7 @@ const AboutDetail = () => {
         {/* Ordering Process */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-amber-600 mb-6 text-center">
-            Quy Trình Đặt Hàng
+            Quy Trình Mua Acc
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {orderingProcess.map((process: any) => (

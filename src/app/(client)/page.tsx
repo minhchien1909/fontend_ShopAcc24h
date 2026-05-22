@@ -6,7 +6,7 @@ import {
   OverlayRegisterStore,
 } from "../store/ZustandSStore";
 import SectionHearderHomepage from "./_sections/homepage/Hearder";
-import FoodSaleSection from "./_sections/FoodSaleSection";
+import AccSaleSection from "./_sections/AccSaleSection";
 import TestimonialsSection from "./_sections/TestimonialsSection";
 import GeneralIntroduction from "./_sections/GeneralIntroduction";
 import SelectSection from "./_sections/SelectSection";
@@ -45,9 +45,9 @@ export default function Page() {
     <Suspense fallback={<Loading />}>
       <div>
         <SectionHearderHomepage />
-        {/* // menu */}
+        {/* Acc hot */}
         <Suspense fallback={<Loading />}>
-          <FoodSaleSection />
+          <AccSaleSection />
         </Suspense>
         {/* // Giới thiệu chung */}
         <Suspense fallback={<Loading />}>

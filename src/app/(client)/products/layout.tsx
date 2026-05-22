@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Danh sách game",
+  title: "Danh sách acc",
   description:
-    "Danh sách game tại cửa hàng Game Store - Bộ sưu tập game chất lượng cao, đa dạng thể loại, phục vụ tận tình.",
+    "Danh sách acc tại Shop Acc24h - Tài khoản game chất lượng, đa dạng game, giao nhanh và bảo hành uy tín.",
 };
 
 export default function ProductsLayout({
